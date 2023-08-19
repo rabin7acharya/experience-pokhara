@@ -162,6 +162,13 @@ nav {
   transform: rotate(180deg);
 }
 
+.popular-section {
+  /* height: 100vh;
+  width: 100vw; */
+  background-color: #fff;
+  padding: 10rem 0;
+}
+
 @keyframes move {
   0% {
     transform: translateY(0);
@@ -194,7 +201,19 @@ nav {
   text-transform: capitalize;
 }
 
-.large-heading > span {
+.medium-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.small-heading {
+  font-weight: 700;
+}
+
+.large-heading > span,
+.medium-heading > span {
   color: var(--primary-color);
 }
 
@@ -207,6 +226,36 @@ nav {
   color: var(--text-color-light);
 }
 
+.border-left {
+  border-left: 1px solid var(--text-color-light);
+}
+
+.item-card {
+  background-color: var(--background-color);
+  border-radius: 0.8rem;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-wrapper {
+  border-radius: 0.5rem;
+  height: 18rem;
+  overflow: hidden;
+}
+
+.card-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /* Extra small devices (portrait phones) */
 @media only screen and (max-width: 575.98px) {
   .hero-info {
@@ -217,6 +266,11 @@ nav {
   .large-heading {
     font-size: 2.5rem;
     line-height: 1.2;
+  }
+
+  .popular-grid {
+    display: grid;
+    grid-template-columns: auto;
   }
 }
 
@@ -232,6 +286,11 @@ nav {
     font-size: 2.5rem;
     line-height: 1.2;
   }
+
+  .popular-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
 
 /* Medium devices (tablets) */
@@ -246,14 +305,25 @@ nav {
     font-size: 2.5rem;
     line-height: 1.2;
   }
+
+  .popular-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 /* Large devices (desktops) */
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-  /* Your styles for large devices here */
+  .popular-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
 }
 
 /* Extra large devices (large desktops) */
 @media only screen and (min-width: 1200px) {
-  /* Your styles for extra large devices here */
+  .popular-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
 }
