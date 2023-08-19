@@ -103,6 +103,7 @@ nav {
 .ham-menu-links {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .cta-btn-primary {
@@ -193,7 +194,8 @@ nav {
 }
 
 .fa-xmark {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
+}
+
+.fa-bars {
+  cursor: pointer;
 }
