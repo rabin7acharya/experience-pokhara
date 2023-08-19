@@ -142,6 +142,11 @@ nav {
   margin: 8rem auto;
 }
 
+.hero-info {
+  align-items: start;
+  gap: 1.5rem;
+}
+
 .vector-line-left {
   position: absolute;
   top: 32rem;
@@ -198,8 +203,17 @@ nav {
   cursor: pointer;
 }
 
+.paragraph-text {
+  color: var(--text-color-light);
+}
+
 /* Extra small devices (portrait phones) */
 @media only screen and (max-width: 575.98px) {
+  .hero-info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   .large-heading {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -208,6 +222,12 @@ nav {
 
 /* Small devices (landscape phones) */
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .hero-info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   .large-heading {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -216,7 +236,16 @@ nav {
 
 /* Medium devices (tablets) */
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  /* Your styles for medium devices here */
+  .hero-info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .large-heading {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
 }
 
 /* Large devices (desktops) */
