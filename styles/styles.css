@@ -97,7 +97,7 @@ nav {
   /* no scroll bar */
   overflow: hidden;
 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .ham-menu-links {
@@ -195,7 +195,7 @@ nav {
 }
 
 .large-heading {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: var(--text-color);
   text-transform: capitalize;
@@ -254,6 +254,7 @@ nav {
 .popular-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 
 /* Extra small devices (portrait phones) */
@@ -271,6 +272,7 @@ nav {
   .popular-grid {
     display: grid;
     grid-template-columns: auto;
+    gap: 1.5rem;
   }
 }
 
@@ -290,6 +292,7 @@ nav {
   .popular-grid {
     display: grid;
     grid-template-columns: auto;
+    gap: 1.5rem;
   }
 }
 
