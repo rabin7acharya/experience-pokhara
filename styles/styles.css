@@ -240,6 +240,15 @@ nav {
   flex-direction: column;
 }
 
+.item-card:hover {
+  box-shadow: 0 4px 16px rgba(92, 64, 12, 0.149);
+  /* neomorphism on hover using mulitple shadow propoerty */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(92, 64, 12, 0.262); */
+
+  transform: translateY(-0.5rem);
+  transition: all 0.2s ease-in-out;
+}
+
 .card-img-wrapper {
   border-radius: 0.5rem;
 
@@ -256,6 +265,52 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+}
+
+.testimonials-section {
+  padding: 0 1rem;
+  background-color: #fff;
+}
+
+.slide-btns > button {
+  height: 2rem;
+  width: 2rem;
+}
+
+.contact-section {
+  padding: 8rem 1rem;
+  background-color: #fff;
+}
+
+.contact-detail-card {
+  /* background-color: var(--background-color); */
+  border-left: 1px solid var(--text-color-light);
+}
+
+.contact-card-info > .small-heading {
+  color: var(--primary-color);
+}
+
+.form-input {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+.form-element > input,
+.form-element > textarea {
+  border: 0.5px solid var(--primary-color);
+}
+
+/* last child of .form-input */
+.form-input > div:last-child {
+  grid-column: 1 / -1;
+}
+
+.form-input > div:last-child > textarea {
+  border-radius: 1rem;
+  height: 10rem;
 }
 
 /* Extra small devices (portrait phones) */
@@ -289,6 +344,10 @@ nav {
 
   .card-img-wrapper {
     height: 20rem;
+  }
+
+  .form-input {
+    grid-template-columns: auto;
   }
 }
 
@@ -324,6 +383,10 @@ nav {
   .card-img-wrapper {
     height: 24rem;
   }
+
+  .form-input {
+    grid-template-columns: auto;
+  }
 }
 
 /* Medium devices (tablets) */
@@ -356,6 +419,10 @@ nav {
 
   .card-img-wrapper {
     height: 18rem;
+  }
+
+  .form-input {
+    grid-template-columns: auto;
   }
 }
 
