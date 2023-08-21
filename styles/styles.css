@@ -140,11 +140,17 @@ nav {
   align-items: center;
   padding: 8rem 1rem;
   background-color: var(--background-color);
+  position: relative;
+  z-index: 1;
 }
 
 .hero-info {
   align-items: start;
   gap: 1.5rem;
+}
+
+.vector {
+  z-index: 2;
 }
 
 .vector-line-left {
@@ -268,7 +274,7 @@ nav {
 }
 
 .testimonials-section {
-  padding: 0 1rem;
+  padding: 8rem 1rem;
   background-color: #fff;
 }
 
@@ -277,9 +283,41 @@ nav {
   width: 2rem;
 }
 
+.packages-section {
+  padding: 8rem 1rem;
+  background-color: var(--background-color);
+}
+
+.packages-filter {
+  background-color: #fff;
+  border-radius: 20rem;
+}
+
+.packages-filter > h1 {
+  color: var(--text-color);
+}
+
+.packages-grid > .item-card {
+  background-color: #fff;
+}
+
+.service-dropdown {
+  color: var(--text-color-light);
+  border: none !important;
+}
+
+.dropdown-btn {
+  border: none !important;
+}
+
+.item-dropdown:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff;
+}
+
 .contact-section {
   padding: 8rem 1rem;
-  /* background-color: #fff; */
+  background-color: var(--background-color);
   position: relative;
 }
 
@@ -300,12 +338,22 @@ nav {
 }
 
 .form-element > input,
-.form-element > textarea {
+.form-element > textarea,
+.service-dropdown-ii {
   border: 0.5px solid var(--primary-color);
 
   /* decrease size of placeholder text  */
   font-size: 1rem;
   padding: 1rem 1.5rem;
+}
+
+.service-dropdown-ii {
+  background-color: #fff;
+}
+
+.dropdown-text {
+  color: var(--text-color-light);
+  border: none !important;
 }
 
 .form-control:focus {
@@ -325,7 +373,10 @@ nav {
 /* Extra small devices (portrait phones) */
 @media only screen and (max-width: 575.98px) {
   .hero-section,
-  .popular-section {
+  .popular-section,
+  .packages-section,
+  .testimonials-section,
+  .contact-section {
     padding: 4rem 1rem;
   }
 
