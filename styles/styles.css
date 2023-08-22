@@ -120,6 +120,16 @@ nav {
   color: var(--background-color);
 }
 
+.cta-btn-primary:focus {
+  background-color: #db571e !important;
+  color: var(--background-color) !important;
+}
+
+.cta-btn-primary:active {
+  background-color: #db571e !important;
+  color: var(--background-color) !important;
+}
+
 .cta-btn-secondary {
   background-color: var(--text-color-light);
   color: var(--background-color);
@@ -204,8 +214,8 @@ nav {
 }
 
 .popular-pagination > .active-page,
-.popular-pagination > a:hover,
-.popular-pagination > a:focus {
+.popular-pagination > .page-btn:hover,
+.popular-pagination > .page.btn:focus {
   background-color: var(--primary-color);
   color: #fff;
 }
