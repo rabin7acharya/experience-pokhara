@@ -9,4 +9,8 @@ $(document).ready(function () {
   $(".fa-xmark").click(function () {
     $(".ham-menu").slideToggle();
   });
+
+  $(".item-card").click(function () {
+    window.location.href = "service.html";
+  });
 });

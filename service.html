@@ -1,11 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Hills Yoga Retreat</title>
+
+    <!-- bootstrap cdn link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html">
+          <img
+            src="./assets/pokhara-yoga-logo.svg"
+            alt=""
+            width="180px"
+            class="py-3"
+          />
+        </a>
+        <ul
+          class="nav-links m-0 p-0 d-none d-sm-none d-md-none d-lg-block d-xl-block"
+        >
+          <li class="nav-link py-4"><a href="">Home</a></li>
+          <li class="nav-link py-4"><a href="">About</a></li>
+          <li class="nav-link py-4"><a href="">What We Offer?</a></li>
+          <li class="nav-link py-4"><a href="">Contact</a></li>
+        </ul>
+
+        <div class="nav-ctas d-flex align-items-center">
+          <button
+            class="btn px-4 py-2 cta-btn-secondary rounded-pill d-none d-sm-none d-md-none d-lg-block d-xl-block"
+          >
+            Contact Us
+          </button>
+          <i
+            class="fa-solid fa-bars d-block d-sm-block d-md-block d-lg-none d-xl-none"
+            style="font-size: 1.5em"
+          ></i>
+        </div>
+        <!-- <button class="btn rounded-pill">Sign Up</button> -->
+      </div>
+      <div class="ham-menu align-items-center flex-column">
+        <ul
+          class="container nav-links ham-menu-links d-flex flex-column gap-0 align-items-center mx-auto"
+        >
+          <nav
+            class="navbar d-flex w-100 justify-content-between mb-5 py-2 align-items-center"
+          >
+            <a href="index.html">
+              <img
+                src="./assets/pokhara-yoga-logo.svg"
+                alt=""
+                width="180px"
+                class="py-3"
+              />
+            </a>
+            <i class="fa-solid fa-xmark" style="font-size: 1.5em"></i>
+          </nav>
+          <li class="nav-link py-4"><a href="">Home</a></li>
+          <li class="nav-link py-4"><a href="">About</a></li>
+          <li class="nav-link py-4"><a href="">What We Offer?</a></li>
+          <li class="nav-link py-4"><a href="">Contact</a></li>
+          <button
+            class="btn btn-lg px-4 py-2 cta-btn-primary rounded-pill mt-4"
+          >
+            Explore Now
+          </button>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="service-section">
+      <div
+        class="service-header container d-flex flex-column align-items-center gap-3 mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0"
+      >
+        <p class="paragraph-text p-0 m-0">Yoga Retreat</p>
+        <h1 class="medium-heading text-center">
+          Green Hills <span> Yoga Retreat</span>
+        </h1>
+
+        <p
+          class="paragraph-text text-center col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6"
+        >
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Necessitatibus pariatur aliquam non voluptate voluptates cupiditate
+          autem ipsa nobis illum, neque quam repellat voluptatibus porro ea
+          itaque veniam placeat iure hic.
+        </p>
+        <button
+          class="btn btn-lg px-4 py-2 cta-btn-primary rounded-pill mt-3 mt-sm-3 mt-md-3 mt-lg-4 mt-xl-4"
+        >
+          Book a Quote
+        </button>
+      </div>
+    </section>
+    <section class="service-body">
+      <div class="container d-flex flex-wrap">
+        <div
+          class="service-cover-wrapper d-flex align-items-center justify-content-center col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 mb-5 mb-sm-5 mb-md-5 mb-lg-0 mb-xl-0"
+        >
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/116566999.jpg?k=575390d3a4b836ac17545d634c290e37fd385155f0fe97306cad10e2a2c89eb8&o=&hp=1"
+            alt=""
+            class="m-0"
+          />
+        </div>
+        <div
+          class="service-overview d-flex flex-column justify-content-center align-items-start gap-3 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 p-0 ps-sm-0 ps-md-0 ps-lg-5 ps-xl-5"
+        >
+          <p class="m-0 p-0 d-flex align-items-center gap-2 paragraph-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              viewBox="0 0 18 22"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 8.89329C0 3.99427 3.90501 0 8.75 0C13.595 0 17.5 3.99427 17.5 8.89329C17.5 11.2584 16.826 13.7979 15.6344 15.9919C14.4444 18.1831 12.7056 20.0872 10.5305 21.1039C9.40057 21.632 8.09943 21.632 6.96949 21.1039C4.79437 20.0872 3.05562 18.1831 1.86556 15.9919C0.674029 13.7979 0 11.2584 0 8.89329ZM8.75 1.5C4.75843 1.5 1.5 4.79748 1.5 8.89329C1.5 10.9904 2.10263 13.2854 3.1837 15.276C4.26624 17.2692 5.79602 18.8996 7.60465 19.745C8.33205 20.085 9.16795 20.085 9.89535 19.745C11.704 18.8996 13.2338 17.2692 14.3163 15.276C15.3974 13.2854 16 10.9904 16 8.89329C16 4.79748 12.7416 1.5 8.75 1.5ZM8.75 6.5C7.50736 6.5 6.5 7.50736 6.5 8.75C6.5 9.99264 7.50736 11 8.75 11C9.99264 11 11 9.99264 11 8.75C11 7.50736 9.99264 6.5 8.75 6.5ZM5 8.75C5 6.67893 6.67893 5 8.75 5C10.8211 5 12.5 6.67893 12.5 8.75C12.5 10.8211 10.8211 12.5 8.75 12.5C6.67893 12.5 5 10.8211 5 8.75Z"
+                fill="#08958a"
+              /></svg
+            >Sedi Heights, Pokhara, Lakeside
+          </p>
+          <h5
+            class="medium-heading col-12 col-sm-12 col-md-9 col-lg-10 col-xl-8"
+          >
+            Green Hills <span> Yoga Retreat</span>
+          </h5>
+          <svg
+            width="32"
+            viewBox="0 0 106 63"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="mt-2"
+          >
+            <path d="M12 0H52.5L27.5 63H0L12 0Z" fill="#FF621F" />
+            <path d="M65 0H105.5L80.5 63H53L65 0Z" fill="#FF621F" />
+          </svg>
+          <p
+            class="paragraph-text col-12 col-sm-12 col-md-9 col-lg-10 col-xl-8"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Necessitatibus pariatur aliquam non voluptate voluptates cupiditate
+            autem ipsa nobis illum, neque quam repellat voluptatibus porro ea
+            itaque veniam placeat iure hic.
+          </p>
+          <button
+            class="btn btn-lg px-4 py-2 cta-btn-primary rounded-pill mt-3 mt-sm-3 mt-md-3 mt-lg-4 mt-xl-4"
+          >
+            Book a Quote
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="key-features">
+      <div class="container key-features">
+        <h1>Hello</h1>
+      </div>
+    </section>
+
+    <!-- bootstrap cdn script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- custom js -->
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
