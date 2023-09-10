@@ -586,6 +586,23 @@ option:hover {
   height: 20rem;
 }
 
+.about-header-section {
+  padding: 8rem 1rem;
+  background-color: var(--background-color);
+}
+
+.about-body-section {
+  padding: 8rem 1rem;
+}
+
+.about-team-section {
+  padding: 8rem 1rem;
+  background-color: var(--background-color);
+}
+
+.info-box {
+  border-bottom: 2px dotted var(--text-color-light);
+}
 /* Extra small devices (portrait phones) */
 @media only screen and (max-width: 575.98px) {
   .hero-section,
