@@ -47,6 +47,11 @@ nav {
   align-items: center;
 }
 
+.nav-links .dropdown-btn {
+  font-weight: 500 !important;
+  color: var(--text-color) !important;
+}
+
 .nav-link {
   display: inline-block;
   position: relative;
