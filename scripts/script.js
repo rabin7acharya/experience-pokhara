@@ -1,4 +1,25 @@
 $(document).ready(function () {
+  $(".popular-scroll").click(function (event) {
+    event.preventDefault();
+    // alert("jQuery is working!");
+    $("html, body").animate(
+      {
+        scrollTop: $(".popular-section").offset().top,
+      },
+      100
+    );
+  });
+
+  $(".contact-scroll").click(function (event) {
+    event.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: $(".contact-section").offset().top,
+      },
+      100
+    );
+  });
+
   // $("button").click(function () {
   //   alert("jQuery is working!");
   // });
